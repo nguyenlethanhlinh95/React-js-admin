@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>Project quản lý thành viên bằng React JS với dữ liệu json</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wapper_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="search_wap">
+                        <nav class="navbar-light m-3 ml-0">
+                            <form class="form-inline">
+                              <input class="form-control" type="search" placeholder="Nhập từ khóa" aria-label="Search">
+                              <button class="btn btn btn-info my-2 my-sm-0" type="submit">Tìm</button>
+                            </form>
+                          </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-9">
+                    <table class="table table-reponsive table-bordered table-hover table-sm table-light">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="text-center">STT</th>
+                            <th scope="col" class="text-center">Tên</th>
+                            <th scope="col" class="text-center">Điện thoại</th>
+                            <th scope="col" class="text-center">Quyền</th>
+                            <th scope="col" class="text-center">Thao tác</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="text-center">
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td class="text-center">
+                                <div class="btn-group" role="group" aria-label="">
+                                    <button type="button" class="btn btn-warning btn-sm">Sửa</button>
+                                    <button type="button" class="btn btn-danger btn-sm">Xóa</button>
+                                </div>
+                            </td>
+                          </tr>
+                          <tr class="text-center">
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                            <td class="text-center">
+                                <div class="btn-group" role="group" aria-label="">
+                                    <button type="button" class="btn btn-warning btn-sm">Sửa</button>
+                                    <button type="button" class="btn btn-danger btn-sm">Xóa</button>
+                                </div>
+                            </td>
+                          </tr>
+                          <tr class="text-center">
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                            <td class="text-center">
+                                <div class="btn-group" role="group" aria-label="">
+                                    <button type="button" class="btn btn-warning btn-sm">Sửa</button>
+                                    <button type="button" class="btn btn-danger btn-sm">Xóa</button>
+                                </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- end col 9 -->
+                <div class="col-lg-3">                   
+                    <div class="card-group text-left">
+                        <div class="card">    
+                            <div class="card-header">Thêm mới user vào hệ thống</div>                      
+                            <div class="card-body">
+                              <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Tên User" aria-describedby="helpId">
+                              </div>
+                              <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Điện thoại " aria-describedby="helpId">
+                              </div>
+                              <div class="form-group">
+                                  <select class="custom-select" name="" id="">
+                                      <option selected>Chọn quyền mặc định</option>
+                                      <option value="1">Adminstrator</option>
+                                      <option value="2">Modrator</option>
+                                      <option value="3">Normal</option>
+                                  </select>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

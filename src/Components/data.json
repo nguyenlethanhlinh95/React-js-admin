@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "linh",
+        "tel": "0909123423",
+        "permission": 1
+    },
+    {
+        "id": 2,
+        "name": "nam",
+        "tel": "0909152123",
+        "permission": 2
+    },
+    {
+        "id": 3,
+        "name": "hoa",
+        "tel": "0909123023",
+        "permission": 3
+    },
+    {
+        "id": 4,
+        "name": "tuan",
+        "tel": "0909123923",
+        "permission": 4
+    }
+]

@@ -1,0 +1,10 @@
+#header{
+    background: #f3f3f3;
+    padding: 50px 0;
+}
+.ml-0{
+    margin-left:0 !important;
+}
+.search_wap nav input{
+    width: 500px !important;
+}
