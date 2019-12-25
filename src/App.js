@@ -5,6 +5,10 @@ import TableMainCom from './Components/Partials/TableMainCom';
 import AddNewUserCom from './Components/Layouts/SidebarAddNewUserCom';
 import data from './Components/data.json';
 
+// tu dong tang id
+const uuidv1 = require('uuid/v1');
+
+
 export default class App extends Component {
   constructor(props) {
     super(props); 
@@ -13,6 +17,24 @@ export default class App extends Component {
       dataUser: data,
       searchText: ''
     }
+  }
+
+  getNewUserData = (name,tel, permisson) => {
+      var item = {};
+      item.name = name;
+      item.tel = tel;
+      item.permission = permisson;
+
+      var items = this.state.dataUser;
+      items.push(item);
+
+      // update state
+      this.setState({
+        dataUser: items
+      });
+
+      console.log(items);
+
   }
 
   thongBao = () => {
@@ -34,7 +56,6 @@ export default class App extends Component {
         rs.push(element);
       }
     });
-    console.log(rs);
 
     return (
       <div>
@@ -56,7 +77,11 @@ export default class App extends Component {
                 <TableMainCom dataUserProps={rs}></TableMainCom>
               </div>
 
-              <AddNewUserCom isShowForm={this.state.isButton}></AddNewUserCom>
+              <AddNewUserCom 
+                addUser={(name,tel,perssion)=>this.getNewUserData(name,tel,perssion)}
+                isShowForm={this.state.isButton}>
+                
+                </AddNewUserCom>
             </div>
           </div>
         </div>
